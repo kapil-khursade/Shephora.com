@@ -1,0 +1,9 @@
+#points-bar{
+    margin: auto;
+    text-align: center;
+    background-color: aqua;
+    border: 1px solid;
+}
+.bold{
+font-weight: bolder;
+}
