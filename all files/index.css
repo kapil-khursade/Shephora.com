@@ -153,6 +153,7 @@
     border: 0px solid white;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 14px;
+    cursor: pointer;
 }
 
 #footer{
@@ -437,6 +438,7 @@ height: 40px;
     height: 110px;
     border: 0px solid;
     border-radius: 10px;
+    cursor: pointer;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   }
 
@@ -460,6 +462,7 @@ height: 40px;
     height: 110px;
     border: 0px solid;
     border-radius: 10px;
+    cursor: pointer;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   }
 
@@ -481,3 +484,39 @@ height: 40px;
   #second-line>div:nth-child(2)>div>p{
     margin-left: 10%;
   }
+
+  /* Popup menues , tootip */
+  .tooltip {
+    position: relative;
+    /* display: inline-block; */
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: max-content;
+    height: auto;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    /* padding: 5px 0; */
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    line-height: 30px;
+    text-align: left;
+    padding-right: 20px;
+  }
+
+  
+
+
+  

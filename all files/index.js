@@ -61,7 +61,8 @@ document.querySelector("#create-account-form>form").addEventListener("submit", f
             if (el.email==signkeys.email.value&&el.password==signkeys.password.value){
                 let obj={
                  email:signkeys.email.value,
-                 password:signkeys.password.value
+                 password:signkeys.password.value,
+                 firstname:el.name
              }
              signinArr.push(obj)
              console.log(signinArr)
@@ -88,12 +89,12 @@ document.querySelector("#create-account-form>form").addEventListener("submit", f
             localStorage.setItem("sigin-data", JSON.stringify(signinArr)); 
         });
 
-        // banner
+        // Makeup Page
+        document.querySelector("#all-makeup").addEventListener("click", function(){
+            console.log("all makeup");
+            window.location.href="all_makeup.html"
+        })
 
-        let rightbtn=document.getElementById("right-btn");
-        let leftbtn=document.getElementById("left-btn");
-        let banner=document.querySelectorAll("#Banner");
-        
 
 
 
