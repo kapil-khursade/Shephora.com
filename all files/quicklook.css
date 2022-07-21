@@ -1,0 +1,24 @@
+#quicklook{
+    width: max-content;
+    height:auto;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
+}
+
+#addtocart{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(228, 54, 83);
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#addtocart:hover{
+    background-color: red;
+    cursor: pointer;
+}
