@@ -1,5 +1,5 @@
 
-let favArr=[];
+let favArr=JSON.parse(localStorage.getItem("fav"))||[];
 
 for(i=0; i<20; i++){
     document.querySelectorAll(".add-btn")[i].addEventListener("click", function(event){
@@ -11,7 +11,6 @@ for(i=0; i<20; i++){
         favArr.push(obj);
         event.target.parentNode.querySelectorAll(".add-btn")[0].style.backgroundColor="red"
         localStorage.setItem("fav", JSON.stringify(favArr));
-        favArr=[]
     });
 }
 

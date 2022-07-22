@@ -1,5 +1,4 @@
-
-
+let cartArr=JSON.parse(localStorage.getItem("cart"))||[];
 
 window.onload = function() {
     let quicklookArr=JSON.parse(localStorage.getItem("quicklook"))||[]
@@ -15,7 +14,12 @@ window.onload = function() {
 
         let addtocart=document.createElement("button");
         addtocart.innerText="Add To Cart"
-        addtocart.setAttribute("id", "addtocart")
+        addtocart.addEventListener("click", function(){
+            cartArr.push(el);
+            localStorage.setItem("cart", JSON.stringify(cartArr));
+            alert("Added To Cart");
+            history.back();
+        })
 
         let review=document.createElement("div");
 

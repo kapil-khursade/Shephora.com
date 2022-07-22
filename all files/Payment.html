@@ -1,0 +1,439 @@
+<!-- Add to cart -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>sephora.com/payment</title>
+    
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <!-- <link rel="stylesheet" type="text/css" href="quicklook.css"> -->
+        <!-- <link rel="stylesheet" type="text/css" href="favourite.css"> -->
+        <!-- <link rel="stylesheet" type="text/css" href="add_to_cart.css"> -->
+        <link rel="stylesheet" type="text/css" href="payment.css">
+        
+       
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <div>
+            <!-- Top line about Beauty insider -->
+            <div id="points-bar">
+                Beauty Insiders: <span class="bold">Earn Points Faster*▸</span>  Not a Beauty Insider? <span class="bold">Join now▸</span>  
+                Free shipping with code <span class="bold">FREESHIP.</span> *Terms apply.
+            </div>
+    
+            <!-- Actual navbar -->
+            <div id="navbar">
+    
+                <div id="logo">
+                    <img src="https://www.sephora.com/img/ufe/logo.svg" alt="shepora">
+                </div>
+        
+                <div id="search">
+                    <input  type="search" placeholder="Search" >
+                </div>
+    
+                <div id="store">
+                    <img src="https://www.sephora.com/img/ufe/icons/stores-active.svg" alt="store logo">
+                    <div>
+                        <h4>Stores & Services</h4>
+                        <p>Choose Your Store</p>
+                    </div>
+                </div>
+    
+                <div id="community">
+                    <img src="https://www.sephora.com/img/ufe/icons/community-active.svg" alt="community logo">
+                    <h4>Community</h4>
+                </div>
+    
+                <div id="signin" >
+                    <img src="https://www.sephora.com/img/ufe/icons/me-active.svg" alt="sigin logo">
+                    <h4>Sign In</h4>
+                </div>
+                
+    
+                <div id="shoping-logo">
+                    <div>
+                        <img src="https://th.bing.com/th/id/OIP.4iSvF7aTwDtcuV-i0F-RnQHaHa?pid=ImgDet&rs=1" alt="message">
+                    </div>
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfV66p14uH0G6tT0kgCpTzcBliVuppzaZjpAqdT_QQU6fjXJycLnNZ2pyUWdMZ5r7h6QM&usqp=CAU" alt="loved">
+                    </div>
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBCYcQPUomOBHWB_5d5FAz-9rLe4cQa7YB0r054A1t2IoBx0GN19k9JiioGLMKN0XZQ_s&usqp=CAU" alt="basket">
+                    </div>
+                </div>
+            </div>
+    
+            <div id="menu">
+                <div class="tooltip">New
+                    <span class="tooltiptext">     
+                        <ul type="none">
+                            <h4>All New </h4>
+                            <li>Just Dropped</li>
+                            <li>New Makeup</li>
+                            <li>New Skincare</li>
+                            <li>New Haircare</li>
+                            <li>New Fragrance</li>
+                            <li>New Bath & Body</li>
+                            <li>New Tools & Brushes</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="tooltip">Brands
+                    <span class="tooltiptext">
+                        <ul type="none">
+                            <h4>Only At Sephora</h4>
+                            <li>Youth to the People</li>
+                            <li>Merit</li>
+                            <li>Kayali</li>
+                            <li>JVN</li>
+                            <h4> New Brands</h4>
+                            <li>HAUS LABS BY LADY GAGA</li>
+                            <li>GXVE Beauty</li>
+                            <li>Fenty Beauty by Rihanna</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="tooltip">Makeup
+                    <span class="tooltiptext">
+                        <ul type="none">
+                            <h4 id="all-makeup">All Makeup</h4>
+                            <h4>Face</h4>
+                            <li>Foundation</li>
+                            <li>BB & CC Cream</li>
+                            <h4>Eyes</h4>
+                            <li>Eye Palettes</li>
+                            <li>Mascara</li>
+                            <li>Eyeliner</li>
+                            <h4>Lip</h4>
+                            <li>Lipsticks</li>
+                            <li>Lip Gloss</li>
+                            <li>Lips Balm & Treatment</li>
+                            <h4>Cheek</h4>
+                            <li>Blush</li>
+                            <li>Bronzer</li>
+                            <li>Highlighter</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="tooltip">Skincare
+                    <span class="tooltiptext">
+                        <ul type="none">
+                            <h4>All Skin Care</h4>
+                            <h4>Moisuriser</h4>
+                            <li>Night Creams</li>
+                            <li>Face Oils</li>
+                            <h4>Cleanser</h4>
+                            <li>Face Wash & Cleaner</li>
+                            <li>Exfoliation</li>
+                            <li>Makeup Removal</li>
+                            <h4>Treatments</h4>
+                            <li>Face Serum</li>
+                            <h4>Mask</h4>
+                            <li>Face Masks</li>
+                            <h4>Eye Care</h4>
+                            <li>Eye Mask</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="tooltip">Hair
+                    <span class="tooltiptext">
+                        <ul type="none">
+                            <h4>All Hair</h4>
+                            <h4>Shampoo & Conditioner</h4>
+                            <li>Shampoo</li>
+                            <li>Conditioner</li>
+                            <h4>Treatments</h4>
+                            <li>Hair Masks</li>
+                            <li>Hair Oils</li>
+                            <h4>Styling</h4>
+                            <li>Styling Creams</li>
+                            <h4>Curly, Coily Textured Hair</h4>
+                        </ul>
+                    </span>
+                </div>
+                <div class="tooltip">Fregrance
+                    <span class="tooltiptext">
+                        <ul type="none">
+                            <h4>All Fregrance</h4>
+                            <h4>Women</h4>
+                            <li>Perfume</li>
+                            <li>Body Mists and Hair Mists</li>
+                            <h4>Men</h4>
+                            <li>Cologne</li>
+                            <h4>Candels and Home Scents</h4>
+                            <li>Candals</li>
+                            <li>Diffusers</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="tooltip">Tools & Brushes
+                    <span class="tooltiptext">
+                        <ul type="none">
+                            <h4>All Tools and Brushes <br> Sephora Collection</h4>
+                            <h4>Brushes And Application</h4>
+                            <li>Brushes Sets</li>
+                            <li>Face Brush</li>
+                            <li>Eyes Brush</li>
+                            <h4>Hair Tools</h4>
+                            <li>Hair Dryer</li>
+                            <li>Curling Iron</li>
+                            <li>Staightner</li>
+                            <h4>Beauty Tool</h4>
+                            <li>Anti-Aging</li>
+                            <li>Teeth Whithening</li>
+                            <h4>Vibrators & Devices</h4> 
+                        </ul>
+                    </span>
+                </div>
+                <div class="tooltip">Baths & Body
+                    <span class="tooltiptext">
+                        <ul type="none">
+                            <h4>All Bath & Body</h4>
+                            <h4>Bath & Shower</h4>
+                            <li>Body Wash & Shower Gel</li>
+                            <li>Scrubs & Exfolliants</li>
+                            <h4>Body Moisturisers</h4>
+                            <li>Body Lotions & Body Oils</li>
+                            <h4>Body Care</h4>
+                            <li>Intimate Care & Vibrator</li>
+                            <li>Deodrant</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="tooltip">Mini Size
+                    <span class="tooltiptext">
+                        <ul type="none">
+                            <h4>All Makeup</h4>
+                            <h4>Skincare</h4>
+                            <h4>Hair</h4>
+                            <h4>Fregrance</h4>
+                            <h4>Tools & Fregrances</h4>
+                        </ul>
+                    </span>
+                </div>
+                <div class="tooltip">Gifts
+                    <span class="tooltiptext">
+                        <ul type="none">
+                            <h4>All Gifts</h4>
+                            <h4>Gift Finders</h4>
+                            <h4>Values & Gifts Sets</h4>
+                            <h4>Gift Cards</h4>
+                        </ul>
+                    </span>
+                </div>
+                <div class="tooltip">Beauty under $20
+                    <span class="tooltiptext">
+                        <ul type="none">
+                            <h4>All Makeup under $20</h4>
+                            <h4>Skincare under $20</h4>
+                            <h4>Hair under $20</h4>
+                            <h4>Fregrance under $20</h4>
+                            <h4>Tools & Fregrances under $20</h4>
+                        </ul>
+                    </span>
+                </div>
+                <div class="tooltip">Sales and Offers
+                    <span class="tooltiptext">
+                        <ul type="none">
+                            <h4>All Gifts</h4>
+                            <h4>Gift Finders</h4>
+                            <h4>Values & Gifts Sets</h4>
+                            <h4>Gift Cards</h4>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- Popoupo menues -->
+    
+        <!-- Sigin --> 
+        <div id="hover-form">
+            <div>
+                <img src="https://community.sephora.com/t5/image/serverpage/avatar-name/default-avatar/avatar-theme/sephora/avatar-collection/sephora/avatar-display-size/profile/version/4" alt="logo">
+                <span>
+                <h4>Welcome Beautifull</h4>
+                <p>Sigin in fro more personalised experience</p>
+                </span>
+            </div>
+            <div>
+                <button id="sigin-butn">Sigin</button>
+                <button id="creat-butn">Create Account</button>
+            </div>
+            <div id="signout">Sigin Out</div>
+        </div>
+    
+        <!-- Sigin in form -->
+        <div id="signin-form">
+            
+            <form >
+                <h3>Sign in to Sephora</h3>
+                <input type="text" placeholder="Email address" id="email">
+                <input type="text" placeholder="Password" id="password">
+                <input type="submit" value="Sign In">
+            </form>
+            <h3>New To Sephora</h3>
+            <button>Create Account</button>
+    
+        </div>
+    
+        <!-- Create account form -->
+        <div id="create-account-form">
+            <div><h4>Create an Account</h4></div>
+            <div>
+                <img src="https://www.sephora.com/img/ufe/bi/logo-beauty-insider.svg" alt="bussiness insider">
+                <p>Join the Beauty Insider loyalty program. Earn points, redeem rewards, and more.</p>
+            </div>
+            <form>
+                <input type="text" placeholder="First Name" id="FirstName">
+                <input type="text" placeholder="Last Name" id="LastName">
+                <input type="text" placeholder="Emailaddress" id="Emailaddress">
+                <input type="text" placeholder="Password" id="Password">
+                <input type="number" placeholder="Phone No (optional)" id="PhoneNo">
+                <input type="text" placeholder="Month" id="Month"><input type="number" placeholder="Day" id="Day">
+                <input type="submit" value="Join Now">
+                
+            </form>
+    
+        </div>
+    <!-- payment -->
+    <div id="paymentform">
+        <h1>Total Price:- $<span id="totalprice">0</span></h1>
+        <h1>Total items:- <span id="totalitems">0</span></h1>
+        <form>
+            <h4>Delivery Address</h4>
+            <input type="text" placeholder="Address line 1">
+            <input type="text" placeholder="Address line 2">
+            <input type="text" placeholder="Address line 3">
+            <input type="text" placeholder="City">
+            <input type="text" placeholder="County">
+            <input type="number" placeholder="Pincode">
+            <input type="number" placeholder="Mobile No">
+            <h4>Payment Details</h4>
+            <label>Account No</label>
+            <input type="number" placeholder="Account No">
+            <input type="text" placeholder="cvv">
+            <input type="text" placeholder="Account Holders Name">
+            <p>card expiry date</p>
+            <input type="date" placeholder="Expiry Date" >
+            <input type="submit" value="Click to Pay">
+        </form>
+
+    </div>
+  
+    
+           <!-- Footer -->
+           <div id="footer">
+            <div>Website Feedback? Let Us Know></div>
+            <div>
+                <div>
+                    <img src="https://www.sephora.com/img/ufe/icons/find-store.svg" alt="store">
+                    <div>
+                        <h4>Find A Store</h4>
+                        <p>Chooose Your Store</p>
+                    </div>
+                    
+                </div>
+                <div>
+                    <img src="https://i.pinimg.com/originals/56/ef/d3/56efd39206cdd1eec2c202389bedf750.jpg" alt="message">
+                   
+                    <h4>Live Beauty Help</h4>
+                </div>
+                <div>
+                    <img src="https://www.sephora.com/img/ufe/icons/app.svg" alt="text">
+                    <div>
+                    <h4>Get The App</h4>
+                    <p>Text "APP" to 654761</p>
+                    </div>
+                    
+                </div>
+                <div>
+                    <img src="https://www.sephora.com/img/ufe/icons/sms-ko.svg" alt="text alert">
+                    <div>
+                        <h4>Get Sephora text Alert</h4>
+                        <p>Signup Now</p>
+                    </div>
+                </div>
+            </div>
+    
+            <hr>
+            <div id="footer-mid">
+                <div>
+                    <div>
+                        <h4>About Sephora</h4>
+                        <li>About Sephora</li>
+                        <li>Newsroom</li>
+                        <li>Careers</li>
+                        <li>Sephora Social Impact</li>
+                        <li>Supply Chain Transparancy</li>
+                        <li>Affiliates</li>
+                        <li>Sephora Events</li>
+                        <li>Gift Cards</li>
+                        <li>Sephora Global Sites</li>
+                        <li>Diversity and Inclusion</li>
+                        <li>Sephora Accelerate</li>
+                        <li>Report a Vlunerability</li>
+                </div>
+                <div>
+                    <h4>My Sephora</h4>
+                    <li>Beauty Insider</li>
+                    <li>Community Profile</li>
+                    <li>Order Status</li>
+                    <li>Purchase History</li>
+                    <li>Account Setting</li>
+                    <li>Beauty Advisory Recomedations</li>
+                    <li>Beauty Offer</li>
+                    <li>Quizzes & Buying Guide</li>
+                    <li>Rewards Bzaar</li>
+                    <li>Loves</li>
+                    <li>Book Reservations</li>
+                </div>
+                <div>
+                    <h4>Help</h4>
+                    <li>Coustemer Service</li>
+                    <li>Return & Exchange</li>
+                    <li>Dilivery and Pickuo Options</li>
+                    <li>Shipping</li>
+                    <li>Billing</li>
+                    <li>International Shipments</li>
+                    <li>Beatuy Serives FAQ</li>
+                    <li>Store Location</li>
+                    <li>Online Ordering</li>
+                    <li>Klama</li>
+                    <li>Acessibilty</li>
+                </div>
+                <div>
+                    <h4>Region & Language</h4>
+                    <li>United States-English</li>
+                    <li>Canda-English</li>
+                    <li>Canada-France</li>
+                </div>
+                </div>
+                <div>
+                    <h1> <span id="foot-name">We</span>  Belong To <br> Something Beautifull</h1>
+                    <div>
+                        <h4>Signup For Sephora Email</h4>
+                        <div>
+                            <input type="search"id="email" placeholder="Enter Your Email Address">
+                            <button>Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+                
+               
+            </div>
+    
+           </div>
+    
+            
+        
+    </body>
+    </html>
+    
+    <script src="index.js"></script>
+    <!-- <script src="quicklook.js"></script> -->
+    <!-- <script src="favourite.js"></script> -->
+    <!-- <script src="add_to_cart.js"></script> -->
+    <script src="payment.js"></script>
