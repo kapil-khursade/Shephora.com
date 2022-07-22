@@ -62,11 +62,11 @@ document.querySelector("#create-account-form>form").addEventListener("submit", f
                 let obj={
                  email:signkeys.email.value,
                  password:signkeys.password.value,
-                 firstname:el.name
+                 firstname:el.firstname
              }
              signinArr.push(obj)
              console.log(signinArr)
-             localStorage.setItem("sigin-data", JSON.stringify(signinArr)); 
+             localStorage.setItem("sigin-data", JSON.stringify(signinArr))||[]; 
              alert("Login Succesfull");
              document.querySelector("#signin-form").style.display="none";
              document.querySelector("#signin>h4").innerText="Hi,"+el.firstname;
@@ -81,6 +81,17 @@ document.querySelector("#create-account-form>form").addEventListener("submit", f
         
         })
 
+        // Siginin status
+
+         signinArr=JSON.parse(localStorage.getItem("sigin-data"))||[]
+        if(signinArr.length!=0){
+            console.log(signinArr);
+            // document.querySelector("#signin-form").style.display="none";
+            document.querySelector("#signin>h4").innerText="Hi,"+signinArr[0].firstname;
+            document.querySelector("#foot-name").innerText=signinArr[0].firstname+", you";
+        }
+
+
         // signout
         document.querySelector("#signout").addEventListener("click", function(){
             window.location.reload()
@@ -93,6 +104,18 @@ document.querySelector("#create-account-form>form").addEventListener("submit", f
         document.querySelector("#all-makeup").addEventListener("click", function(){
             console.log("all makeup");
             window.location.href="all_makeup.html"
+        })
+
+        // Acessing favourite page
+        document.querySelector("#shoping-logo>div:nth-child(2)").addEventListener("click", function(){
+            document.querySelector("#shoping-logo>div:nth-child(2)>img").style.border="1px solid red";
+            window.location.href="favourite.html"
+        })
+
+        // Acessing shopping cart
+        document.querySelector("#shoping-logo>div:nth-child(3)").addEventListener("click", function(){
+            document.querySelector("#shoping-logo>div:nth-child(3)>img").style.border="1px solid red";
+            window.location.href="add_to_cart.html"
         })
 
 

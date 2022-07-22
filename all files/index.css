@@ -128,10 +128,12 @@
     width: 140px;
     border: 0px solid;
     justify-content: space-between;
+    
 }
 #shoping-logo>div{
     width: 35px;
     border: 0px solid;
+    cursor: pointer;
 }
 #shoping-logo>div>img{
     width: 100%;
@@ -385,6 +387,7 @@ height: 40px;
     height: auto;
     border: 0px solid;
     overflow-x:scroll;
+    scroll-behavior: smooth;
     white-space: nowrap;
     margin-top: 10px;
     position: absolute;
