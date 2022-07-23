@@ -23,6 +23,7 @@
 
 #logo{
     width: 120px;
+    cursor: pointer;
 }
 
 #logo>img{
@@ -73,7 +74,7 @@
 
 #signin{
     display: flex;
-    width: 80px;
+    width: 100px;
     justify-content: space-between;
     align-items: center;
 }
@@ -128,6 +129,7 @@
     width: 140px;
     border: 0px solid;
     justify-content: space-between;
+    cursor: pointer;
     
 }
 #shoping-logo>div{
