@@ -12,8 +12,8 @@ let seconds = Math.floor((dist % (1000 * 60)) / 1000);
 document.querySelector("#exp").innerText=minutes + "m " + seconds + "s "
 
 if(dist<0){
-    alert("OTP Expired");
     history.back();
+    alert("OTP Expired");
 } 
 })
 

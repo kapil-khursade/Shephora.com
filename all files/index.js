@@ -69,7 +69,7 @@ document.querySelector("#create-account-form>form").addEventListener("submit", f
              localStorage.setItem("sigin-data", JSON.stringify(signinArr))||[]; 
              alert("Login Succesfull");
              document.querySelector("#signin-form").style.display="none";
-             document.querySelector("#signin>h4").innerText="Hi,"+el.firstname;
+             document.querySelector("#signin>h4").innerText="Hi, "+el.firstname;
              document.querySelector("#foot-name").innerText=el.firstname+", you";
              log=true;
             }
@@ -87,17 +87,23 @@ document.querySelector("#create-account-form>form").addEventListener("submit", f
         if(signinArr.length!=0){
             console.log(signinArr);
             // document.querySelector("#signin-form").style.display="none";
-            document.querySelector("#signin>h4").innerText="Hi,"+signinArr[0].firstname;
+            document.querySelector("#signin>h4").innerText="Hi, "+signinArr[0].firstname;
             document.querySelector("#foot-name").innerText=signinArr[0].firstname+", you";
         }
 
 
         // signout
         document.querySelector("#signout").addEventListener("click", function(){
-            window.location.reload()
-            alert("Loged Out");
-            signinArr=[];
-            localStorage.setItem("sigin-data", JSON.stringify(signinArr)); 
+            
+            if(signinArr.length!=0){
+                window.location.reload();
+                alert("Loged Out");
+                signinArr=[];
+                localStorage.setItem("sigin-data", JSON.stringify(signinArr));
+            }else{
+                alert("You are not Signed in.")
+            }
+            
         });
 
         // Makeup Page
@@ -116,6 +122,12 @@ document.querySelector("#create-account-form>form").addEventListener("submit", f
         document.querySelector("#shoping-logo>div:nth-child(3)").addEventListener("click", function(){
             document.querySelector("#shoping-logo>div:nth-child(3)>img").style.border="1px solid red";
             window.location.href="add_to_cart.html"
+        })
+
+        // Returning to homepage
+
+        document.querySelector("#logo").addEventListener("click", function(){
+            window.location.href="index.html"
         })
 
 
