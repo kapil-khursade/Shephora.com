@@ -11,6 +11,14 @@ let seconds = Math.floor((dist % (1000 * 60)) / 1000);
 //   console.log( minutes + "m " + seconds + "s ");
 document.querySelector("#exp").innerText=minutes + "m " + seconds + "s "
 
+// otp recived
+if(dist===170000){
+    alert("OTP is 1234");
+}
+
+
+
+// otp expires
 if(dist<0){
     history.back();
     alert("OTP Expired");
