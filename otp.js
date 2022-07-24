@@ -12,8 +12,8 @@ let seconds = Math.floor((dist % (1000 * 60)) / 1000);
 document.querySelector("#exp").innerText=minutes + "m " + seconds + "s "
 
 // otp recived
-if(dist===170000){
-    alert("OTP is 1234");
+if (dist>179900){
+    alert("OTP is 1234")
 }
 
 
