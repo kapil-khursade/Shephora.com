@@ -15,6 +15,7 @@ Cloned the e-commerced website Shephora.com in 5 days indiviual construct Week P
 * CSS properties
 * HTML tags such as Forms
 * Event Listener
+* Local Storage
 * append etc
 
 ## Functionalites
